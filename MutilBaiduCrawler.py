@@ -244,21 +244,9 @@ def MyRun(tasks, task_list, threadNumber):
 if __name__ == '__main__':
     # 线程数量
     threadNumber = 12
-    # tasks = {"黄鳝": 330, "蛇": 110, "木乃伊": 110, "丧尸": 110, "恐怖的玩偶": 110, "老鼠": 110, "修马蹄": 110, "修驴蹄": 110,
-    #          "修牛蹄": 110, "活田螺": 110, "活福寿螺": 110, "福寿螺的卵": 110, "狮子 老虎 野牛 进食": 110, "蜥蜴": 110,
-    #          "蟑螂": 110, "活昆虫": 330, "青蛙": 110, "蜜蜂窝": 110, "水蛭": 110, "脚气": 110, "脸上长疮": 110, "身上长瘤": 110, "脚上长鸡眼": 110,
-    #          "手足脱皮": 110, "身上长疹子": 110, "甲沟炎": 55, "灰指甲": 55,
-    #          "修脚指甲": 55, "没有羽毛的幼鸟": 110, "牛打架": 110}
-    # task_list = {"黄鳝": "Ahuangshan", "蛇": "Ashe", "木乃伊": "Amunaiyi", "丧尸": "Asangshi",
-    #              "恐怖的玩偶": "Akbdwo", "老鼠": "Alaoshu", "修马蹄": "Axiumati", "修驴蹄": "Axiulvti", "修牛蹄": "Axiuniuti",
-    #              "活田螺": "Ahuotianluo",
-    #              "活福寿螺": "Ahfsl", "福寿螺的卵": "Afsldl", "狮子 老虎 野牛 进食": "Aszlhynjs", "蜥蜴": "Axiyi",
-    #              "蟑螂": "Azhanglang", "活昆虫": "Ahuokunchong",
-    #              "青蛙": "Aqingwa", "蜜蜂窝": "Amifengwo", "水蛭": "Ashuizhi", "脚气": "Ajiaoqi", "脸上长疮": "Alszc",
-    #              "身上长瘤": "Asszl", "脚上长鸡眼": "Ajszjy", "手足脱皮": "Asztp",
-    #              "身上长疹子": "Asszzz",
-    #              "甲沟炎": "Ajiagouyan", "灰指甲": "Ahuizhijia", "修脚指甲": "Axjzj", "没有羽毛的幼鸟": "Amyymdyn", "牛打架": "Aniudajia"}
+    # tasks 表示{爬取名称：爬取数量}
     tasks = {"苹果特写": 10,"橘子特写":10,"香蕉特写":10,"葡萄特写":10,"草莓特写":10}
+    # task_list 爬取的时候会在同级目录生成图片文件夹和图片url文件夹，{爬取名称：爬取图片前缀}
     task_list = {"苹果特写": "apple","橘子特写":"orange","香蕉特写":"Banana","葡萄特写":"grape","草莓特写":"strawberry"}
 
     MyRun(tasks, task_list, threadNumber)
